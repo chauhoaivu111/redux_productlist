@@ -1,0 +1,87 @@
+@use "../../sass/" as *;
+
+.displayform {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4em;
+  column-gap: 4rem;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+
+  @include tablet {
+
+  grid-template-columns: repeat(2,1fr);
+  }
+
+  @include mobile {
+
+    grid-template-columns: repeat(1,1fr);
+
+    }
+
+}
+.frame_element_card:hover {
+  transform: translateY(-5px);
+  box-shadow: $box-shadow;
+}
+
+.frame_element_card {
+  width: 400px;
+  background-color: white;
+
+  border: 0.3px  solid rgb(230, 228, 228);
+  
+
+  border-radius: 10px;
+
+  .each_element {
+    width: 100%;
+    height: 100%;
+
+    p {
+      text-align: center;
+      font-size: larger;
+      padding-bottom: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: 80%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  @include tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include mobile {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+
+.frame_piantion{
+
+  // background-color: aqua;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+
+  @include mobile {
+    margin-bottom: 2rem;
+  }
+.style_panigation{
+  margin: auto;
+}
+}
